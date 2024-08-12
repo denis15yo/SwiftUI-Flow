@@ -29,6 +29,7 @@ public enum Justification: Sendable {
 /// Cache to store certain properties of subviews in the layout (flexibility, spacing preferences, layout priority).
 /// Even though it needs to be public (because it's part of the layout protocol conformance),
 /// it's considered an internal implementation detail.
+@available(iOS 16.0, *)
 public struct FlowLayoutCache {
     @usableFromInline
     struct SubviewCache {

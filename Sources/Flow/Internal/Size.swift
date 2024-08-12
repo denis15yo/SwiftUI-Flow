@@ -98,6 +98,7 @@ extension CGSize: FixedOrientation2DCoordinate {
     }
 }
 
+@available(iOS 16.0, *)
 extension ProposedViewSize: FixedOrientation2DCoordinate {
     @inlinable
     init(size: Size, axis: Axis) {

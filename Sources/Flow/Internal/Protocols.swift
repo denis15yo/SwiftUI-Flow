@@ -1,10 +1,13 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 @usableFromInline
 protocol Subviews: RandomAccessCollection where Element: Subview, Index == Int {}
 
+@available(iOS 16.0, *)
 extension LayoutSubviews: Subviews {}
 
+@available(iOS 16.0, *)
 @usableFromInline
 protocol Subview {
     var spacing: ViewSpacing { get }
@@ -14,6 +17,7 @@ protocol Subview {
     func place(at position: CGPoint, anchor: UnitPoint, proposal: ProposedViewSize)
 }
 
+@available(iOS 16.0, *)
 extension LayoutSubview: Subview {
     @usableFromInline
     func dimensions(_ proposal: ProposedViewSize) -> any Dimensions {

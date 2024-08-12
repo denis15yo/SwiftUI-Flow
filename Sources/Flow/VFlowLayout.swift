@@ -1,6 +1,7 @@
 import SwiftUI
 
 /// A layout that arranges its children in a vertically flowing manner.
+@available(iOS 16.0, *)
 @frozen
 public struct VFlowLayout {
     @usableFromInline
@@ -38,6 +39,7 @@ public struct VFlowLayout {
     }
 }
 
+@available(iOS 16.0, *)
 extension VFlowLayout: Layout {
     @inlinable
     public func sizeThatFits(

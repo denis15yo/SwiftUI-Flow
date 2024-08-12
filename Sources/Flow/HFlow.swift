@@ -18,6 +18,7 @@ import SwiftUI
 ///         }
 ///     }
 ///
+@available(iOS 16.0, *)
 @frozen
 public struct HFlow<Content: View>: View {
     @usableFromInline 
@@ -98,10 +99,12 @@ public struct HFlow<Content: View>: View {
     }
 }
 
+@available(iOS 16.0, *)
 extension HFlow: Animatable where Content == EmptyView {
     public typealias AnimatableData = EmptyAnimatableData
 }
 
+@available(iOS 16.0, *)
 extension HFlow: Layout where Content == EmptyView {
     /// Creates a horizontal flow with the given spacing and vertical alignment.
     ///
