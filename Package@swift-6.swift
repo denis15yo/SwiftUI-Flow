@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "Flow",
     platforms: [
-        .iOS(.v16),
+        .iOS(.v14),
         .macOS(.v13),
         .tvOS(.v16),
         .watchOS(.v9)
