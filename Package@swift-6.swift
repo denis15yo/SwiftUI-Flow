@@ -8,13 +8,11 @@ let package = Package(
         .iOS(.v14),
         .macOS(.v13),
         .tvOS(.v16),
-        .watchOS(.v9)
+        .watchOS(.v9),
+        .visionOS(.v1)
     ],
     products: [
         .library(name: "Flow", targets: ["Flow"])
-    ],
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0")
     ],
     targets: [
         .target(
